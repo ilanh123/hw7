@@ -1,0 +1,105 @@
+[
+    {
+        "Artist" : "Britney Spears",
+        "Title" : "Toxic",
+        "Genre" : {
+            "GenreOne" : "Dance Pop"
+        },
+        "Year" : "2003"
+    },
+    {
+        "Artist" : "Arctic Monkeys",
+        "Title" : "505",
+        "Genre" : {
+            "GenreOne" : "Alternative"
+        },
+        "Year" : "2007"
+    },
+    {
+        "Artist" : "Maroon 5",
+        "Title" : "Moves like Jagger",
+        "Genre" : {
+            "GenreOne" : "Pop"
+        },
+        "Year" : "2010"
+    },
+    {
+        "Artist" : "Adele",
+        "Title" : "Rolling in the Deep",
+        "Genre" : {
+            "GenreOne" : "R and B Soul",
+            "GenreTwo" : "Pop"
+        },
+        "Year" : "2011"
+    },
+    {
+        "Artist" : "Pitbull",
+        "Title" : "Timber",
+        "Genre" : {
+            "GenreOne" : "Pop"
+        },
+        "Year" : "2013"
+    },
+    {
+        "Artist" : "Lorde",
+        "Title" : "Buzzcut Season",
+        "Genre" : {
+            "GenreOne" : "Indie"
+        },
+        "Year" : "2013"
+    },
+    {
+        "Artist" : "Tame Impala",
+        "Title" : "Let it Happen",
+        "Genre" : {
+            "GenreOne" : "Psychedlic Pop",
+            "GenreTwo" : "Indie rock"
+        },
+        "Year" : "2015"
+    },
+    {
+        "Artist" : "Billie Ellish",
+        "Title" : "bury a friend",
+        "Genre" : {
+            "GenreOne" : "Industrial Pop",
+            "GenreTwo" : "Synth-Pop",
+            "GenreThree" : "Electropop"
+        },
+        "Year" : "2019"
+    },
+    {
+        "Artist" : "Post Malone",
+        "Title" : "Candy Paint",
+        "Genre" : {
+            "GenreOne" : "Hip-Hop"
+        },
+        "Year" : "2017"
+    },
+    {
+        "Artist" : "Melbourne Ska Orchestra",
+        "Title" : "Tuyo",
+        "Genre" : {
+            "GenreOne" : "Indie",
+            "GenreTwo" : "Reggae"
+        },
+        "Year" : "2017"
+    },
+    {
+        "Artist" : "Metro Boomin",
+        "Title" : "Space Cadet",
+        "Genre" : {
+            "GenreOne" : "Hip-Hop"
+        },
+        "Year" : "2018"
+    },
+    {
+        "Artist" : "Linkin Park",
+        "Title" : "Numb",
+        "Genre" : {
+            "GenreOne" : "Alternative Rock",
+            "GenreTwo" : "Nu Metal",
+            "GenreThree" : "Metal"
+        },
+        "Year" : "2003"
+    }
+]

@@ -50,7 +50,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Wedding Song Playlist</title>
+        <title>Song list using JSON!</title>
     </head>
     
     <!-- INCLUDING JQUERY-->
@@ -98,7 +98,7 @@
                     //Part 3: User Friendly Display
                     for(let i = 0; i < songs.Genre.length; i++) {
                         if(selectedGen == songs.Genre[i]) {
-                            strHTML += "<li>" + songs.Title + ": " + songs.Artist + "</li>" + "Genre: " + songs.Genre + "<br/>" + "Released: " + songs.Year + "<br/>" + "<br/>";
+                            strHTML += "<li>" + songs.Artist + ": " + songs.Title + "</li>" + "Genre: " + songs.Genre + "<br/>" + "Released: " + songs.Year + "<br/>" + "<br/>";
                         }
                     }
                 })

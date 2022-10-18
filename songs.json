@@ -2,103 +2,73 @@
     {
         "Artist" : "Britney Spears",
         "Title" : "Toxic",
-        "Genre" : {
-            "GenreOne" : "Dance Pop"
-        },
+        "Genre" : ["Dance Pop"],
         "Year" : "2003"
     },
     {
         "Artist" : "Arctic Monkeys",
         "Title" : "505",
-        "Genre" : {
-            "GenreOne" : "Alternative"
-        },
+        "Genre" : ["Alternative"],
         "Year" : "2007"
     },
     {
         "Artist" : "Maroon 5",
         "Title" : "Moves like Jagger",
-        "Genre" : {
-            "GenreOne" : "Pop"
-        },
+        "Genre" : ["Pop"],
         "Year" : "2010"
     },
     {
         "Artist" : "Adele",
         "Title" : "Rolling in the Deep",
-        "Genre" : {
-            "GenreOne" : "R and B Soul",
-            "GenreTwo" : "Pop"
-        },
+        "Genre" : ["R and B Soul", "Pop"],
         "Year" : "2011"
     },
     {
         "Artist" : "Pitbull",
         "Title" : "Timber",
-        "Genre" : {
-            "GenreOne" : "Pop"
-        },
+        "Genre" : ["Pop"],
         "Year" : "2013"
     },
     {
         "Artist" : "Lorde",
         "Title" : "Buzzcut Season",
-        "Genre" : {
-            "GenreOne" : "Indie"
-        },
+        "Genre" : ["Indie"],
         "Year" : "2013"
     },
     {
         "Artist" : "Tame Impala",
         "Title" : "Let it Happen",
-        "Genre" : {
-            "GenreOne" : "Psychedlic Pop",
-            "GenreTwo" : "Indie"
-        },
+        "Genre" : ["Psychedlic Pop", "Indie"],
         "Year" : "2015"
     },
     {
         "Artist" : "Billie Ellish",
         "Title" : "bury a friend",
-        "Genre" : {
-            "GenreOne" : "Industrial Pop",
-            "GenreTwo" : "Pop",
-            "GenreThree" : "Electropop"
-        },
+        "Genre" : ["Industrial Pop", "Pop", "Electropop"],
         "Year" : "2019"
     },
     {
         "Artist" : "Post Malone",
         "Title" : "Candy Paint",
-        "Genre" : {
-            "GenreOne" : "Hip-Hop"
-        },
+        "Genre" : ["Hip-Hop"],
         "Year" : "2017"
     },
     {
         "Artist" : "Melbourne Ska Orchestra",
         "Title" : "Tuyo",
-        "Genre" : {
-            "GenreOne" : "Indie",
-            "GenreTwo" : "Reggae"
-        },
+        "Genre" : ["Indie", "Reggae"],
         "Year" : "2017"
     },
     {
         "Artist" : "Metro Boomin",
         "Title" : "Space Cadet",
-        "Genre" : {
-            "GenreOne" : "Hip-Hop"
-        },
+        "Genre" : ["Hip-Hop"],
         "Year" : "2018"
     },
     {
         "Artist" : "Linkin Park",
         "Title" : "Numb",
-        "Genre" : {
-            "GenreOne" : "Alternative Rock",
-            "GenreTwo" : "Metal"
-        },
+        "Genre" : ["Alternative Rock", "Metal"],
         "Year" : "2003"
     }
 ]

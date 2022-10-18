@@ -5,9 +5,9 @@
         <title>Song list using JSON!</title>
     </head>
     
-    <!-- INCLUDING JQUERY-->
+    <!-- Including JQUERY -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    
+    <!-- Linking style sheet -->
     <link rel="stylesheet" href="style.css">
     
     <body>
@@ -15,30 +15,28 @@
         <div id = "display-friendly"></div>
         
         <script>
-            //part 2: Serialize and Display
+            //part 2: 'Serialize' the JSON
             var str = "";
-            $.get("https://ilanh123.github.io/hw7/songs.json", 
+            $.get("https://ilanh123.github.io/hw7/songs.json",  // linking the separate JSON file using JQUERY
                   function( data ) {
-                    str = JSON.stringify(data);
+                    str = JSON.stringify(data); // gathering the data and steralizing
                 
                     //Part 2: Serialize and Display
                     strdisplay = str + "<br/> <br/>";
                 
                     strHTML= "<ul>";
         
-                    data.forEach(function(songs) { 
-                        //Part 3: User Friendly Display
+                    data.forEach(function(songs) {  // printing the data in a friendly way using HTML lists
                         strHTML += "<li>" + songs.Title + ": " + songs.Artist + "</li>" + "Genre: " + songs.Genre + " <br/>" + "Released: " + songs.Year + "<br/>" + "<br/>";
                     })
                 
                 strHTML += "</ul>";
-                
-                // document.getElementById("display").innerHTML = strdisplay;
+                // adding the friendly display into HTML using the 'display-friendly' div 
                 document.getElementById("display-friendly").innerHTML = strHTML;
             });
             
             function filter() {
-                //Part 4: Filter the Data
+                // filtering the data
                 var data = JSON.parse(str);
                 
                 var select = document.getElementById("genreForm");
@@ -47,9 +45,8 @@
                 strHTML = "<br/>";
                 
                 data.forEach(function(songs) { 
-                    //Part 3: User Friendly Display
-                    for(let i = 0; i < songs.Genre.length; i++) {
-                        if(currGenre == songs.Genre[i]) {
+                    for(let i = 0; i <= songs.Genre.length; i++) {
+                        if(currGenre == songs.Genre[i]) { // cycling through genres to filter through all genres and discover the song has the genre in question
                             strHTML += "<li>" + songs.Artist + ": " + songs.Title + "</li>" + "Genre: " + songs.Genre + "<br/>" + "Released: " + songs.Year + "<br/>" + "<br/>";
                         }
                     }
@@ -61,6 +58,7 @@
             
         </script>
         
+        <!--  creating the form where the user can select a genre and filter the songs by genre -->
         <label for="genreForm">Select a Genre:</label>
         <select id = "genreForm">
             <option value = "Dance Pop">Dance Pop</option>
@@ -75,6 +73,7 @@
             <option value = "Metal">Metal</option>
         </select>
         
+        <!-- on click call the function filter -->
         <button onclick="filter()">Go</button>
     </body>
 </html>

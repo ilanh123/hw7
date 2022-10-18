@@ -20,7 +20,7 @@
     {
         "Artist" : "Adele",
         "Title" : "Rolling in the Deep",
-        "Genre" : ["R and B Soul", " Pop"],
+        "Genre" : ["R and B Soul", "Pop"],
         "Year" : "2011"
     },
     {
@@ -38,13 +38,13 @@
     {
         "Artist" : "Tame Impala",
         "Title" : "Let it Happen",
-        "Genre" : ["Psychedlic Pop", " Indie"],
+        "Genre" : ["Psychedlic Pop", "Indie"],
         "Year" : "2015"
     },
     {
         "Artist" : "Billie Ellish",
         "Title" : "bury a friend",
-        "Genre" : ["Industrial Pop", " Pop", " Electropop"],
+        "Genre" : ["Industrial Pop", "Pop", "Electropop"],
         "Year" : "2019"
     },
     {
@@ -56,7 +56,7 @@
     {
         "Artist" : "Melbourne Ska Orchestra",
         "Title" : "Tuyo",
-        "Genre" : ["Indie", " Reggae"],
+        "Genre" : ["Indie", "Reggae"],
         "Year" : "2017"
     },
     {
@@ -68,7 +68,7 @@
     {
         "Artist" : "Linkin Park",
         "Title" : "Numb",
-        "Genre" : ["Alternative Rock", " Metal"],
+        "Genre" : ["Alternative Rock", "Metal"],
         "Year" : "2003"
     }
 ]

@@ -53,7 +53,7 @@
         "Title" : "Let it Happen",
         "Genre" : {
             "GenreOne" : "Psychedlic Pop",
-            "GenreTwo" : "Indie rock"
+            "GenreTwo" : "Indie"
         },
         "Year" : "2015"
     },
@@ -62,7 +62,7 @@
         "Title" : "bury a friend",
         "Genre" : {
             "GenreOne" : "Industrial Pop",
-            "GenreTwo" : "Synth-Pop",
+            "GenreTwo" : "Pop",
             "GenreThree" : "Electropop"
         },
         "Year" : "2019"
@@ -97,8 +97,7 @@
         "Title" : "Numb",
         "Genre" : {
             "GenreOne" : "Alternative Rock",
-            "GenreTwo" : "Nu Metal",
-            "GenreThree" : "Metal"
+            "GenreTwo" : "Metal"
         },
         "Year" : "2003"
     }

@@ -76,7 +76,7 @@
         
                     data.forEach(function(songs) { 
                         //Part 3: User Friendly Display
-                        strHTML += "<li>" + songs.title + ": " + songs.artist + "</li>" + "Genre: " + songs.genre + "<br/>" + "Released: " + songs.released + "<br/>" + "<br/>";
+                        strHTML += "<li>" + songs.Title + ": " + songs.Artist + "</li>" + "Genre: " + songs.Genre + "<br/>" + "Released: " + songs.Year + "<br/>" + "<br/>";
                     })
                 
                 strHTML += "</ul>";
@@ -96,9 +96,9 @@
                 
                 data.forEach(function(songs) { 
                     //Part 3: User Friendly Display
-                    for(let i = 0; i < songs.genre.length; i++) {
-                        if(selectedGen == songs.genre[i]) {
-                            strHTML += "<li>" + songs.title + ": " + songs.artist + "</li>" + "Genre: " + songs.genre + "<br/>" + "Released: " + songs.released + "<br/>" + "<br/>";
+                    for(let i = 0; i < songs.Genre.length; i++) {
+                        if(selectedGen == songs.Genre[i]) {
+                            strHTML += "<li>" + songs.Title + ": " + songs.Artist + "</li>" + "Genre: " + songs.Genre + "<br/>" + "Released: " + songs.Year + "<br/>" + "<br/>";
                         }
                     }
                 })
@@ -111,11 +111,16 @@
         
         <label for="genreForm">Select a Genre:</label>
         <select id = "genreForm">
+            <option value = "Dance Pop">Dance Pop</option>
+            <option value = "Alternative">Alternative</option>
             <option value = "Pop">Pop</option>
-            <option value = "Jazz">Jazz</option>
-            <option value = "Soul">Soul</option>
-            <option value = "Alternative/Indie">Alternative/Indie</option>
-            <option value = "RnB">RnB</option>
+            <option value = "R and B Soul">R and B Soul</option>
+            <option value = "Psychedlic Pop">Psychedlic Pop</option>
+            <option value = "Industrial Pop">Industrial Pop</option>
+            <option value = "Electropop">Electropop</option>
+            <option value = "Hip-Hop">Hip-Hop</option>
+            <option value = "Reggae">Reggae</option>
+            <option value = "Metal">Metal</option>
         </select>
         
         <button onclick="filter()">Go</button>

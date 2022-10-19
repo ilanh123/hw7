@@ -15,7 +15,7 @@
         <div id = "display-friendly"></div>
         
         <script>
-            //part 2: 'Serialize' the JSON
+            // 'Serialize' the JSON
             var str = "";
             $.get("https://ilanh123.github.io/hw7/songs.json",  // linking the separate JSON file using JQUERY
                   function( data ) {
@@ -27,8 +27,8 @@
                     strHTML= "<ul>";
         
                     data.forEach(function(songs) {  // printing the data in a friendly way using HTML lists
-                        strHTML += "<li>" + songs.Title + ": " + songs.Artist + "</li>" + "Genre: " + songs.Genre + " <br/>" + "Released: " + songs.Year + "<br/>" + "<br/>";
-                    })
+                        strHTML += "<li> <strong>" + songs.Title + "</strong> by " + songs.Artist + "</li>" + "Genre: " + songs.Genre + " <br/>" + "Released: " + songs.Year + "<br/>" + "<br/>";
+                    });
                 
                 strHTML += "</ul>";
                 // adding the friendly display into HTML using the 'display-friendly' div 
@@ -47,7 +47,7 @@
                 data.forEach(function(songs) { 
                     for(let i = 0; i <= songs.Genre.length; i++) {
                         if(currGenre == songs.Genre[i]) { // cycling through genres to filter through all genres and discover the song has the genre in question
-                            strHTML += "<li>" + songs.Artist + ": " + songs.Title + "</li>" + "Genre: " + songs.Genre + "<br/>" + "Released: " + songs.Year + "<br/>" + "<br/>";
+                            strHTML += "<li> <strong>" + songs.Artist + "</strong> by " + songs.Title + "</li>" + "Genre: " + songs.Genre + "<br/>" + "Released: " + songs.Year + "<br/>" + "<br/>";
                         }
                     }
                 })
@@ -55,7 +55,7 @@
                 
                 document.getElementById("display-friendly").innerHTML = strHTML;
             }
-            
+
         </script>
         
         <!--  creating the form where the user can select a genre and filter the songs by genre -->

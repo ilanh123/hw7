@@ -11,12 +11,15 @@
     <link rel="stylesheet" href="style.css">
     
     <body>
-        <div id = "display"></div>
+        <!-- <div id = "display"></div> -->
+        <div id = "intro">
+            <h1>Here are a list of songs! Use the filter at the bottom to sort by genre!</h1>
+        </div>
         <div id = "display-friendly"></div>
         
         <script>
             // 'Serialize' the JSON
-            var str = "";
+            str = "";
             $.get("https://ilanh123.github.io/hw7/songs.json",  // linking the separate JSON file using JQUERY
                   function( data ) {
                     str = JSON.stringify(data); // gathering the data and steralizing
@@ -35,26 +38,26 @@
                 document.getElementById("display-friendly").innerHTML = strHTML;
             });
             
-            function filter() {
+            function genreFilter() {
                 // filtering the data
-                var data = JSON.parse(str);
+                data = JSON.parse(str);
                 
-                var select = document.getElementById("genreForm");
-                var currGenre = select.value; 
+                select = document.getElementById("genreForm");
+                currGenre = select.value; 
                 
                 strHTML = "<br/>";
                 
                 data.forEach(function(songs) { 
                     for(let i = 0; i <= songs.Genre.length; i++) {
                         if(currGenre == songs.Genre[i]) { // cycling through genres to filter through all genres and discover the song has the genre in question
-                            strHTML += "<li> <strong>" + songs.Artist + "</strong> by " + songs.Title + "</li>" + "Genre: " + songs.Genre + "<br/>" + "Released: " + songs.Year + "<br/>" + "<br/>";
+                            strHTML += "<li> <strong>" + songs.Title + "</strong> by " + songs.Artist + "</li>" + "Genre: " + songs.Genre + "<br/>" + "Released: " + songs.Year + "<br/>" + "<br/>";
                         }
                     }
-                })
+                });
                 strHTML += "</ul>";
                 
                 document.getElementById("display-friendly").innerHTML = strHTML;
-            }
+            };
 
         </script>
         
@@ -74,6 +77,6 @@
         </select>
         
         <!-- on click call the function filter -->
-        <button onclick="filter()">Go</button>
+        <button onclick="genreFilter()">Filter!</button>
     </body>
 </html>

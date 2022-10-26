@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css">
     
     <body>
-        <!-- <div id = "display"></div> -->
+        <div id = "display"></div>
         <div id = "intro">
             <h1>Here are a list of songs! Use the filter at the bottom to sort by genre!</h1>
         </div>
@@ -36,6 +36,7 @@
                 strHTML += "</ul>";
                 // adding the friendly display into HTML using the 'display-friendly' div 
                 document.getElementById("display-friendly").innerHTML = strHTML;
+                document.getElementById("display").innerHTML = str;
             });
             
             function genreFilter() {
